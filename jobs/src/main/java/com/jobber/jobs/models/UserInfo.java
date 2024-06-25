@@ -37,6 +37,6 @@ public class UserInfo {
     private String password;
 
     @ManyToMany(fetch = FetchType.EAGER)
-    @Column(nullable = false, name = "user_roles")
+    @Column(nullable = false, name = "ROLES")
     private Set<UserRole> roles = new HashSet<>();
 }
